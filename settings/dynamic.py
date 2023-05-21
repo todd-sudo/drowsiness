@@ -1,0 +1,4 @@
+
+
+class DynamicSettings:
+    pass

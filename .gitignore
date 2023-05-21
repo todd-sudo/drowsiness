@@ -177,7 +177,7 @@ ehthumbs_vista.db
 # Dump file
 *.stackdump
 
-# Folder config file
+# Folder settings file
 Desktop.ini
 
 # Recycle Bin used on file shares
@@ -272,11 +272,6 @@ backup.sh
 # Auto-generated tag files
 tags
 *.json
-### Project template
-inflation_tv/media/*
-!inflation_tv/media/countries/.gitkeep
-!inflation_tv/media/logs/.gitkeep
-!inflation_tv/media/snapshots/.gitkeep
 
 .pytest_cache/
 .ipython/
