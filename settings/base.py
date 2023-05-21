@@ -1,5 +1,7 @@
-import json
+from settings.dynamic import DynamicSettings
+from settings.static import StaticSettings
 
 
 class AppSettings:
-    pass
+    static_settings: StaticSettings = StaticSettings()
+    dynamic_settings: DynamicSettings = DynamicSettings
