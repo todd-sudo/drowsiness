@@ -145,13 +145,13 @@ class DrowsinessDetector(EARHelperMixin, MessageHelperMixin):
             if not success:
                 break
 
-            frame = cv2.resize(frame, (400, 700))
+            frame = cv2.resize(frame, (280, 500))
 
             frame, _ = self._detect(frame=frame, thresholds=thresholds)
 
             cv2.imshow("drowsiness", frame)
 
-            if cv2.waitKey(10) & 0xFF == 27:
+            if cv2.waitKey(30) & 0xFF == 27:
                 break
 
         cap.release()

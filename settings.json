@@ -14,7 +14,7 @@
   "input_video":  {
     "name": "",
     "description": "",
-    "value": "video_2023.mp4"
+    "value": "media/new_video.mp4"
   },
 
   "max_num_faces": {
