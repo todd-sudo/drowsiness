@@ -10,7 +10,6 @@ from src.ear import EARHelperMixin
 from src.message import MessageHelperMixin
 from src.mp import MediaPipeHelper
 
-
 COLORS = {
     "RED": (0, 0, 255),
     "GREEN": (0, 255, 0)
@@ -84,7 +83,6 @@ class DrowsinessDetector(EARHelperMixin, MessageHelperMixin):
             )
 
             if ear < thresholds["ear_thresh"]:
-
                 end_time = time.perf_counter()
 
                 self.state_tracker["drowsy_time"] += \

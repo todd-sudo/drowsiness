@@ -14,7 +14,8 @@ class MessageHelperMixin:
         for lm_coordinates in [left_lm_coordinates, right_lm_coordinates]:
             if lm_coordinates:
                 for coord in lm_coordinates:
-                    cv2.circle(frame, coord, 2, color, -1)
+                    frame_copy = frame.copy()
+                    cv2.circle(frame_copy, coord, 2, color, -1)
 
         frame = cv2.flip(frame, 1)
         return frame
